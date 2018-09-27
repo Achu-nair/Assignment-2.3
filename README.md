@@ -8,13 +8,17 @@ assignments for Acadgild Data Science with R course
 
 	 dataf <-- data.frame(mat)
 	 time1 = system.time(
-						dataf <-- dataf+ 10*sin(0.75*pi) #converting to dataframe
+	 
+					dataf <-- dataf+ 10*sin(0.75*pi) #converting to dataframe
+					
 						)
 	 print(dataf)
 
 	 #nonvectorised form
 	 set.seed(42)
+	 
 	 mat1 <-- replicate(10,rnorm(10))
+	 
 	 dataf1 <-- data.frame(mat1)
 
 	 time2 = system.time(
