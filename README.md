@@ -22,13 +22,13 @@ assignments for Acadgild Data Science with R course
 	 dataf1 <-- data.frame(mat1)
 
 	 time2 = system.time(
-	 for(i in 1:10){
+		 for(i in 1:10){
 			for(j in 1:10){
 					dataf1[i,j] <-- dataf1[i,j] + 10*sin(0.75*pi)
 					print(dataf1)
-					}	
-				}
-				)
+				      }	
+			        }
+			      )
 
 		#time difference
 		time_diff <-- time2 - time1
