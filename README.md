@@ -9,9 +9,9 @@ assignments for Acadgild Data Science with R course
 	 dataf <-- data.frame(mat)
 	 time1 = system.time(
 	 
-					dataf <-- dataf+ 10*sin(0.75*pi) #converting to dataframe
+			dataf <-- dataf+ 10*sin(0.75*pi) #converting to dataframe
 					
-						)
+			   )
 	 print(dataf)
 
 	 #nonvectorised form
