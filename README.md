@@ -1,35 +1,24 @@
-# Assignment-2.3
-assignments for Acadgild Data Science with R course
+# Assignment-3.2
+
+Create an m x n matrix with replicate(m, rnorm(n)) with m=10
+column vectors of n=10 elements each, constructed with rnorm(n),
+which creates random normal numbers.
+• Then we transform it into a dataframe (thus 10 observations of
+10 variables) and perform an algebraic operation on each
+element using a nested for loop: at each iteration, every element
+referred by the two indexes is incremented by a sinusoidal
+function, compare the vectorized and non-vectorized form of
+creating the solution and report the system time differences.
+
+code:
 
 
-	#vectorized form
-	set.seed(42)
-	 mat <-- replicate(10,rnorm(10))
+solution:
 
-	 dataf <-- data.frame(mat)
-	 time1 = system.time(
-	 
-			dataf <-- dataf+ 10*sin(0.75*pi) #converting to dataframe
-					
-			   )
-	 print(dataf)
-
-	 #nonvectorised form
-	 set.seed(42)
-	 
-	 mat1 <-- replicate(10,rnorm(10))
-	 
-	 dataf1 <-- data.frame(mat1)
-
-	 time2 = system.time(
-		 for(i in 1:10){
-			for(j in 1:10){
-					dataf1[i,j] <-- dataf1[i,j] + 10*sin(0.75*pi)
-					print(dataf1)
-				      }	
-			        }
-			      )
-
-		#time difference
-		time_diff <-- time2 - time1
-		print(time_diff)
+	vectorised form:
+	
+	
+	non-vectorised:
+	
+	
+	time diff:
