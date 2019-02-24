@@ -12,13 +12,18 @@ creating the solution and report the system time differences.
 
 code:
 
+![](assg3_2code.PNG)
 
 solution:
 
-	vectorised form:
+vectorised form:
 	
+![](assignment3_2_vec_solution.PNG)
 	
-	non-vectorised:
+non-vectorised:
 	
+![](assignment3_2_nvec_solution.PNG)
 	
-	time diff:
+time diff:
+
+![](assignment3_2_timediff_solution.PNG)
